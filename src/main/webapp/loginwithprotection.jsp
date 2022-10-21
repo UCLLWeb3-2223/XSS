@@ -14,7 +14,8 @@
 	</header>
 	<main>
 	<article>
-		<p>This form is protected against XSS. Write following code in input field:">Some paragraph</p>
+		<p>This form is protected against XSS. </p>
+		<p>Write following code in input field:<code style="background-color: #d9edf7; border-radius: 5px; ">">&lt;script&gt;alert("Hoi");&lt;/script&gt;</code>.</p>
 		<form method="post" action="">
 			<fieldset>
 				<legend>Login</legend>

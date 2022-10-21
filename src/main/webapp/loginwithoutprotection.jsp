@@ -5,7 +5,7 @@
 <head>
 <link rel="stylesheet" href="css/sample.css">
 <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
-<title>Login Form with XSS</title>
+<title>Login Form without protection against XSS</title>
 </head>
 <body>
 	<header role="banner">
@@ -16,7 +16,9 @@
 		<script>
 			document.cookie = "user=John";
 		</script>
-		<p>This form is protected against XSS. Write following code in input field:">Some paragraph</p>
+		<p>This form is not protected against XSS. </p>
+		<p>Write following code in input field:<code style="background-color: #d9edf7; border-radius: 5px; ">">&lt;script&gt;alert("Hoi");&lt;/script&gt;</code>.</p>
+
 		<form method="post" action="">
 			<fieldset>
 				<legend>Login</legend>
